@@ -1,0 +1,176 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#titulo {
+    font-family: sans-serif;
+    color: #FF4F4F;
+    margin-left: 0%;
+	font-weight: 600;
+} 
+
+body{
+    background: url(../imagens1/bg-about.png) center 0 no-repeat;
+}
+
+
+#check{
+    display: inline-block;
+}
+
+fieldset {
+    border: 0;
+}
+
+
+.bloco1{
+    font-family: sans-serif;
+    font-size: 1em;
+    color: #FF4F4F;
+    margin-left: 36%;
+    margin-top: 2%;
+    justify-content: center;
+}
+
+
+input, select, textarea, button {
+    font-family: sans-serif;
+    font-size: 1em;
+    color: #FF4F4F;
+    border-radius: 5px;
+}
+
+.grupo:after {
+    clear: both;
+}
+
+.campo {
+    margin-bottom: 1em;
+}
+
+.campo label {
+    margin-bottom: 0.2em;
+    color: #FF4F4F;
+    display: block;
+}
+
+
+fieldset.grupo .campo {
+   
+    margin-right: 1em;
+}
+
+
+.campo input[type="text"], .campo input[type="email"], .campo select, .campo textarea {
+    padding: 0.2em;
+    border: 1px solid #FF4F4F;
+    box-shadow: 2px 2px 2px rgba(0,0,0,0.2);
+    display: block;
+}
+
+
+
+
+.botao {
+   
+    background: #FF4F4F;
+    border: 0;
+    margin-bottom: 1em;
+    color: #ffffff;
+    padding: 0.2em 0.6em;
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+}
+
+
+.botao:hover {
+    background: #3a3636;
+    box-shadow: inset 2px 2px 2px rgba(0,0,0,0.2);
+    text-shadow: none;
+}
+
+.logomarca_cadastro{
+	width: 100px;
+	height: 33px;
+	background: url("../imagens1/logo.png") no-repeat 0 0;
+	display: block;	
+}
+
+
+.logomarca{
+	width: 100px;
+	height: 33px;
+	background: url("../imagens1/logo.png") no-repeat 0 0;
+	display: block;
+}
+
+
+
+.footer{
+	padding-top: 10px;
+}
+
+.footer{
+	padding: 50px 0;
+	border-top: 1px solid #DEE8F2;
+	border-bottom: 1px solid #DEE8F2;
+}
+
+.footer__titulo{
+	font-size: 20px;
+	line-height: 24px;
+	font-weight: 600;
+	color: #2F281E;
+	margin-bottom: 50px;
+	display: block;
+}
+
+.footer__link{
+	color: #544837;
+	text-decoration: none;
+}
+
+.footer__link:hover{
+	color: #FF4F4F;
+}
+
+.footer__menu-item{
+	margin-bottom: 15px;
+}
+
+.footer__descricao{
+	color: #544837;
+	line-height: 24px;
+	font-size: 18px;
+	margin-top: 20px;
+}
+
+.footer__links{
+	width: 25%;
+	float: left;
+}
+
+.footer__pages{
+	width: 25%;
+	float: left;
+}
+
+.footer__legal{
+	width: 10%;
+	float: left;
+}
+
+.footer__box{
+	width: 40%;
+	float: left;
+}
+
+
+.footer__autor a{
+	color: #F65954;
+}

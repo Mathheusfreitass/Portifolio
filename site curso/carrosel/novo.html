@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title><Page Title></title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href="carrosel.css">
+    <script src='main.js'></script>
+    <script src="https://kit.fontawesome.com/d0a865ab2a.js" crossorigin="anonymous"></script>
+
+
+
+</head>
+<body>
+    <div class="slide">
+
+        <div class="slides">
+
+            <div id="voltar" class="btn">
+             <i class="fas fa-chevron-left"></i>
+            </div>
+            
+            <div id="next" class="btn">
+             <i class="fas fa-chevron-right"></i>
+            </div>
+
+            <div id="atual" class="image">
+                <img src="imgs/escritorio1.jpg" alt="">
+            </div>
+
+            <div class="image">
+                <img src="imgs/escritorio2.jpg" alt="">
+            </div>
+
+            
+            <div class="image">
+                <img src="imgs/escritorio3.jpg" alt="">
+            </div>
+
+            <div class="image">
+                <img src="imgs/escritorio4.jpg" alt="">
+            </div>
+
+            <div class="balls">
+                <div class="imgAtual"  id='0'></div>
+                <div id='1'></div>
+                <div id='2'></div>
+                <div id='3'></div>
+            </div>
+
+        </div>
+
+    </div>
+</body>
+
+<script>
+
+    var balls = document.querySelector('.balls')
+    var quant = document.querySelector('.slides .image')
+    var atual = 0
+    var imagem = document.getElementById('atual')
+    var next = document.getElementById('next')
+    var voltar = document.getElementById('voltar')
+
+    for(let i=0; i < quant.lenth; i++) {
+        var div = document.createElement('div')
+        div.id = i
+        balls.appendChild(div)
+    }
+    document.getElementById('0').classList.add('imgAtual')
+
+    var pos = document.querySelectorAll('.balls div')
+
+    for (let i=0; i< pos.length; i++ ) {
+        pos[i].addEventListener('click', function() { 
+            atual = pos[i].id
+                slide()
+    })
+}
+
+voltar.addEventListener('click', ()=>{
+    atual--
+     slide()
+} )
+
+next.addEventListener('click', ()=>{
+    atual++
+    slide()
+} )
+
+    function slide() {
+        if (atual >= quant.length){
+            atual = 0
+        }
+        else if(atual < 0) {
+            atual = quant.length-1
+        }
+        document.querySelector('.imgAtual').classList.remove('.imgAtual')
+        imagem.style.marginLeft = -1024*atual+'px'
+        document.getElementById(atual).classList.add('imgAtual')
+    }
+    slide()
+</script>
+
+</html>

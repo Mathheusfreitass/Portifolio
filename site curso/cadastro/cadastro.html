@@ -1,0 +1,146 @@
+<!doctype html>
+<html>
+
+    <head>
+     
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="stylesheet" type="text/css" href="cadastro.css" media="screen">
+        <script type="text/javascript" src="cadastro.js"></script>
+
+        <title>Cadastro</title>
+    </head>
+
+    <body>  
+
+        <form class="bloco1">
+
+          
+        <div>
+            <h1 id="titulo">Cadastro</h1>
+            <a href="#" class="logo">
+                <i class="logomarca_cadastro"></i>
+            </a>
+        
+            <br>
+        </div>
+            <fieldset class="grupo">
+              
+                <div class="campo">
+                    <label for="nome"><strong>Nome</strong></label>
+                    <input type="text" name="nome" id="nome" required >
+                    <br> <br> 
+                </div>
+
+                
+                <div class="campo">
+                    <label for="sobrenome"><strong>Sobrenome</strong></label>
+                    <input type="text" name="sobrenome" id="sobrenome" required>
+                    <br> <br>
+                </div>
+            </fieldset> 
+
+      
+            <div class="campo">
+                <label for="email"><strong>Email</strong></label>
+                <input type="email" name="email" id="email" required>
+                <br> <br>
+            </div>
+
+        
+            <div class="campo">
+                <label><strong>De qual lado da aplicação você desenvolve?</strong></label>
+                <label>
+                    <input type="radio" name="devweb" value="frontend" checked>Front-end
+                </label>
+                <label>
+                    <input type="radio" name="devweb" value="backend">Back-end
+                </label>
+                <label>
+                    <input type="radio" name="devweb" value="fullstack">Fullstack
+                </label>
+            </div>
+
+        
+            <div class="campo">
+                <label for="senioridade"><strong>Nivel</strong></label>
+                <select id="senioridade" required>
+                  <option selected disabled value="">Selecione</option>
+                  <option>Júnior</option>
+                  <option>Pleno</option>
+                  <option>Sênior</option>
+                </select>
+            </div>
+
+            <fieldset class="grupo">
+              
+                <div id="check">
+                    <label><strong>Selecione as tecnologias que utiliza:</strong></label><br><br>
+                    <input type="checkbox" id="tecnologia1" name="tecnologia1" value="HTML">
+                    <label for="tecnologia1"> HTML</label>
+                    <input type="checkbox" id="tecnologia2" name="tecnologia2" value="CSS">
+                    <label for="tecnologia2"> CSS</label>
+                    <input type="checkbox" id="tecnologia3" name="tecnologia3" value="JavaScript">
+                    <label for="tecnologia3"> JavaScript</label>
+                    <input type="checkbox" id="tecnologia7" name="tecnologia7" value="Java">
+                    <label for="tecnologia7"> Java</label>
+                </div>
+            </fieldset>
+
+          
+            <div class="campo">
+                <br>
+                <label for="experiencia"><strong> Sua descrição: </strong></label>
+                <textarea rows="6" style="width: 26em" id="experiencia" name="experiencia"></textarea>
+            </div>
+
+           
+            <button onclick="alert(' Analisaremos seu curriculo, entraremos em contato ')" class="botao" type="submit" onsubmit="">Concluído</button>            
+
+        </form>
+
+        <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> 
+        <footer class="footer">
+            <div class="center">
+              <div class="footer__box">
+                <i class="logomarca"></i>
+                <p class="footer__descricao">Lorem ipsum dolor sit amet, consectetur adipisicing elit, 
+                quis nostrud exercitation <br> ullamco laboris nisi ut aliquip ex ea commodo</p>
+              </div>
+    
+              <nav class="footer__links">
+                <strong class="footer__titulo"> Links</strong>
+                <ul>
+                  <li class="footer__menu-item"><a  href="#" class="footer__link">Sobre nós</a></li>
+                  
+                </ul>
+              </nav>
+              <nav class="footer__pages">
+                <strong class="footer__titulo">PAgina</strong>
+                <ul>
+                  <li class="footer__menu-item"><a href="#" class="footer__link">Descrição</a></li>
+                  
+                </ul>
+              </nav>
+              <nav class="footer__legal">
+                <strong class="footer__titulo">Politica</strong>
+                <ul>
+                 
+                  <li class="footer__menu-item"><a href="#" class="footer__link">Politica de privacidade</a></li>
+                </ul>
+              </nav>
+              <div class="clear">
+    
+              </div>
+            </div>
+           
+          </footer>
+       
+             
+                 
+
+    </body>
+
+    
+
+</html>

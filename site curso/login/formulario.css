@@ -1,0 +1,135 @@
+body{
+	font-family: 'Martel Sans', sans-serif;
+    background: url(../imagens1/bg-about.png) center 0 no-repeat;
+}
+
+
+
+form{
+    background-color: #eeecec;
+    max-width: 500px;
+    width: 70%;
+    padding: 20px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+
+form h3{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+    color:#FF4F4F;
+    font-weight: 900;
+}
+
+form input[type=text],
+form input[type=password]{
+    width: 100%;
+    height: 45px;
+    border: 1px solid #ccc;
+    padding-left: 10px;
+    margin: 10px 0;
+}
+
+form input[type=submit]{
+    width:100%;
+    height: 30px;
+    cursor: pointer;
+    color: #FF4F4F;
+    border: 0;
+    border-radius: 20px;
+    transition: 1s;
+}
+
+form input[type=submit]:hover{
+    background-color: #581d1d;
+}
+
+.logomarca_login{
+	width: 100px;
+	height: 33px;
+	background: url("../imagens1/logo.png") no-repeat 0 0;
+	display: block;	
+    margin-left: 200px;
+}
+
+
+.logomarca{
+	width: 100px;
+	height: 33px;
+	background: url("../imagens1/logo.png") no-repeat 0 0;
+	display: block;
+}
+
+
+.footer{
+	padding-top: 30px;
+}
+
+.footer .center{
+	padding: 50px 0;
+	border-top: 1px solid #DEE8F2;
+	border-bottom: 1px solid #DEE8F2;
+}
+
+.footer__titulo{
+	font-size: 20px;
+	line-height: 24px;
+	font-weight: 600;
+	color: #2F281E;
+	margin-bottom: 50px;
+	display: block;
+}
+
+.footer__link{
+	color: #544837;
+	text-decoration: none;
+}
+
+.footer__link:hover{
+	color: #FF4F4F;
+}
+
+.footer__menu-item{
+	margin-bottom: 15px;
+}
+
+.footer__descricao{
+	color: #544837;
+	line-height: 24px;
+	font-size: 18px;
+	margin-top: 20px;
+}
+
+.footer__links{
+	width: 25%;
+	float: left;
+}
+
+.footer__pages{
+	width: 25%;
+	float: left;
+}
+
+.footer__legal{
+	width: 10%;
+	float: left;
+}
+
+.footer__box{
+	width: 40%;
+	float: left;
+}
+
+.footer__autor{
+	text-align: center;
+	font-size: 14px;
+	color: #5D523D;
+	padding: 20px 0;
+}
+
+.footer__autor a{
+	color: #F65954;
+}
